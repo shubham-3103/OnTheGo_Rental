@@ -64,7 +64,84 @@
 label{
   display: flex;
   flex-direction: column;
+  padding: 2% 5% ;
+  font-weight: 600;
+  font-size: 18px;
 }
+.space{
+  margin-top: 5%;
+}
+input{
+  height: 30px;
+}
+input:hover{
+  border-color: blue;
+  transition: 0.5s;
+}
+.uploadbutton{
+  padding: 1%;
+  font-size: 14px;
+  position: relative;
+  left: 45%;
+  margin-top: 5%;
+}
+.active{
+
+}
+@keyframes img1{
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(40deg);
+  }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .image_ {
+    animation: img1 infinite 10s linear;
+  }
+}
+
+.app-wrapper{
+  color: white;
+  position: absolute;
+  right: 2%;
+  padding: 2%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+.app-wrapper, .app-button_login{
+  position: absolute;
+  right: 2%;
+  padding: 2%;
+}
+.app-wrapper span{
+  font-size: 14px;
+  font-weight: 700;
+}
+.app-buttons_logout , .app-button_login{
+  padding: 5px;
+  border-radius: 10%;
+  scale: 1.1;
+  right: 8%;
+}
+.user {
+  /* display: inline-block; */
+  position: absolute;
+  border-radius: 50%;
+  right: 0.2%;
+  /* object-fit: cover; */
+}
+.app-button_login{
+  top: 2%;
+}
+.app-balance span{
+  position: relative;
+  left: -20%;
+}
+
 
 /* .header .image_{
   position: absolute;
@@ -74,3 +151,94 @@ label{
   position: absolute;
   left: 10px;
 } */
+
+.bookride {
+  background-image: linear-gradient(
+    to right,
+    blue,
+    blue 50%,
+    #000 50%
+  );
+  background-size: 200% 100%;
+  background-position: 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+.bookride:before {
+  content: '';
+  background:blue;
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 3px;
+}
+.bookride:hover {
+  background-position: 0;
+}
+.bookride:hover::before {
+  width: 100%;
+}
+
+.uploadvehicle {
+  background-image: linear-gradient(
+    to right,
+    blue,
+    blue 50%,
+    #000 50%
+  );
+  background-size: 200% 100%;
+  background-position: 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+.uploadvehicle:before {
+  content: '';
+  background:blue;
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 3px;
+}
+.uploadvehicle:hover {
+  background-position: 0;
+}
+.uploadvehicle:hover::before {
+  width: 100%;
+}
+
+
+.availablevehicle {
+  background-image: linear-gradient(
+    to right,
+    blue,
+    blue 50%,
+    #000 50%
+  );
+  background-size: 200% 100%;
+  background-position: 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+.availablevehicle:before {
+  content: '';
+  background:blue;
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 3px;
+}
+.availablevehicle:hover {
+  background-position: 0;
+}
+.availablevehicle:hover::before {
+  width: 100%;
+}
